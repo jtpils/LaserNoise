@@ -1,0 +1,6 @@
+<launch>
+<node pkg="laser_noise" name="laser_noise" type="laser_noise" output="screen">
+<param name="NoiseLength" value="30"/>
+<remap from="/scan" to="/scaninput"/>
+</node>
+</launch>
